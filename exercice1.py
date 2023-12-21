@@ -1,3 +1,4 @@
+#-------------Correction------------------
 
 def serie_impair(a,b):
     ma_liste = []
