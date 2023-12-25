@@ -1,0 +1,17 @@
+#------------------- Récréer la fonction Sort() -----------------
+#------- 1ère méthode----------------
+import random
+
+def sort_fonction (a,b,c):
+
+    liste_initiale = [random.randint(a,b) for i in range(c)]
+    liste_triée = []
+    print(liste_initiale)
+
+    for i in range(c):
+        valeur_min = min(liste_initiale)
+        liste_triée.append(valeur_min)
+        liste_initiale.remove(valeur_min)
+    return liste_triée
+
+print(sort_fonction(-1, 50, 40))
